@@ -10,7 +10,7 @@ COPY src src
 COPY pom.xml .
 RUN ./mvnw package -DskipTests=true
 
-# second stage
+# second stage (so cannot see the code, just the jar file -> hence people usually use 2 stages)
 FROM openjdk:23-ea-oracle
 
 WORKDIR /runningapp
