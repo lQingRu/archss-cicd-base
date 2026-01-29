@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: cicd-demo-app
-          image: archss/cicd-demo-app:v1
+          image: darryl1975/cicd-demo-app:v2
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
